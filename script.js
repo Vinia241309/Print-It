@@ -46,4 +46,13 @@ arrowRight.addEventListener("click", function () {
 			i++;
 	}turnSlide();
 });
+setInterval(function(){
+	if (i == 0) {
+		i = numberOfSlide - 1;
+	}
+	else {
+		i--;
+	}turnSlide();
+},3000) 
+
 
